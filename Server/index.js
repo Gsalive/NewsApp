@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/LugaNodes', {
+mongoose.connect('mongodb+srv://gsalive2002:gsalive2002@cluster0.ypuyyvj.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
