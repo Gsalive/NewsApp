@@ -9,7 +9,7 @@ export default function Signup() {
 
     async function registerUser(event){
         event.preventDefault();
-      const response= await fetch('https://catch-of-the-day-c8ah.onrender.com/api/register',{
+      const response= await fetch('https://news-app-api-smoky.vercel.app/api/register',{
         method:'POST',
         headers:{
             'Content-Type':'application/json',

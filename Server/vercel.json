@@ -1,0 +1,10 @@
+{
+    "version":2,
+    "build":[
+        {"src":"*.js","use":"@verce,]l/node"}
+    ],
+    "routes":{
+        "src":"/(.*)",
+        "dest":"/"
+    }
+}

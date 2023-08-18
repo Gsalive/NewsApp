@@ -5,7 +5,7 @@ const Hero = () => {
     const [dialog,setDialog]=useState('')
     const [tempdialog,settempDialog]=useState('')
     async function populateDialog() {
-        const req = await fetch('https://catch-of-the-day-c8ah.onrender.com/api/dialog', {
+        const req = await fetch('https://news-app-api-smoky.vercel.app/api/dialog', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -34,7 +34,7 @@ const Hero = () => {
 
     async function updatedialog(event){
         event.preventDefault()
-        const req = await fetch('https://catch-of-the-day-c8ah.onrender.com/api/dialog', {
+        const req = await fetch('https://news-app-api-smoky.vercel.app/api/dialog', {
         method:'POST',   
         headers: {
                 'Content-Type':'application/json',

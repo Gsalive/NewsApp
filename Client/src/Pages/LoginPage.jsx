@@ -22,7 +22,7 @@ export default function Login() {
 
     async function loginuser(event){
         event.preventDefault();
-      const response= await fetch('https://catch-of-the-day-c8ah.onrender.com/api/login',{
+      const response= await fetch('https://news-app-api-smoky.vercel.app/api/login',{
         method:'POST',
         headers:{
             'Content-Type':'application/json',
