@@ -9,7 +9,7 @@ export default function Signup() {
 
     async function registerUser(event){
         event.preventDefault();
-      const response= await fetch('https://news-app-api-smoky.vercel.app/api/register',{
+      const response= await fetch('https://catch-of-the-day-c8ah.onrender.com/api/register',{
         method:'POST',
         headers:{
             'Content-Type':'application/json',
@@ -22,7 +22,7 @@ export default function Signup() {
       })  
       const data =await response.json();
       if(data.status==='ok'){
-        window.open('/','_self')
+        window.open('/NewsApp','_self')
       }
       console.log(data)
     }

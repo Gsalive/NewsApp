@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Login/>}></Route>
+          <Route exact path='/NewsApp' element={<Login/>}></Route>
           <Route  path='/signup' element={<Signup/>}></Route>
           <Route  path='/hero' element={<TopStories apiKey={apiKey} section="home" />}></Route>
         </Routes>
