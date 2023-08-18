@@ -34,7 +34,7 @@ const Hero = () => {
 
     async function updatedialog(event){
         event.preventDefault()
-        const req = await fetch('=https://catch-of-the-day-c8ah.onrender.com/api/dialog', {
+        const req = await fetch('https://catch-of-the-day-c8ah.onrender.com/api/dialog', {
         method:'POST',   
         headers: {
                 'Content-Type':'application/json',
